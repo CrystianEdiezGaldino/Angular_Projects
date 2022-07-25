@@ -1,0 +1,7 @@
+<div class="class">
+    <div *ngIf="canShow"> mostrando isso porque o valor da variavel canShow é true</div>
+    <h2 *ngIf="name ==='Crystian'; else nameNotFoud">O nome é  Crystian</h2>
+    <ng-template #nameNotFoud>
+        <div> <h2>O nome não foi encontrado</h2> </div>
+    </ng-template>
+</div>
